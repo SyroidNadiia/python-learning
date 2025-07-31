@@ -91,3 +91,57 @@ house = [["hallway", 11.25],
 
 # Subset the house list
 house[4][1]
+
+
+# Create the areas list
+areas = ["hallway", 11.25, "kitchen", 18.0, "living room", 20.0, "bedroom", 10.75, "bathroom", 9.50]
+
+# Correct the bathroom area
+areas[-1] = 10.50
+
+# Change "living room" to "chill zone"
+areas[4] = "chill zone"
+
+
+# Create the areas list and make some changes
+areas = ["hallway", 11.25, "kitchen", 18.0, "chill zone", 20.0,
+         "bedroom", 10.75, "bathroom", 10.50]
+
+# Add poolhouse data to areas, new list is areas_1
+areas_1 = areas + ["poolhouse", 24.5]
+
+# Add garage data to areas_1, new list is areas_2
+areas_2 = areas_1 + ["garage", 15.45]
+
+
+
+areas = ["hallway", 11.25, "kitchen", 18.0,
+        "chill zone", 20.0, "bedroom", 10.75,
+         "bathroom", 10.50, "poolhouse", 24.5,
+         "garage", 15.45]
+
+# Delete the poolhouse items from the list
+del areas[10]
+del areas[10]
+
+# Print the updated list
+print(areas)
+
+
+# If you want to prevent changes in areas_copy from also taking effect in areas, you'll have to do a more explicit copy of the areas list with list() or by using [:].
+
+# Use print() in combination with type() to print out the type of var1.
+# Use len() to get the length of the list var1. Wrap it in a print() call to directly print it out.
+# Use int() to convert var2 to an integer. Store the output as out2.
+# Create variables var1 and var2
+var1 = [1, 2, 3, 4]
+var2 = True
+
+# Print out type of var1
+print(type(var1))
+
+# Print out length of var1
+print(len(var1))
+
+# Convert var2 to an integer: out2
+out2 = int(var2)
